@@ -1,5 +1,24 @@
 # environment.yml - conda environment specification file for RMG-Py
 #
+name: rmg_env
+channels:
+  - rmg
+  - conda-forge
+  - cantera
+dependencies:
+  - python=3.8  # or the version specified in the RMG documentation
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - pytest
+  - cclib
+  - rdkit
+  - descripta
+  - diffeqpy
+  - cantera
+  - openbabel
+  - ...
 # Usage: conda env create --file environment.yml
 #
 # This file contains all of the software packages needed to run RMG-Py.
